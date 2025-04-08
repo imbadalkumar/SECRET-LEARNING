@@ -1,0 +1,248 @@
+/* EduApp - Advanced UI/UX Home Page CSS */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f8fb;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Header Section */
+  .header {
+    background: linear-gradient(145deg, #e0f0ff, #c6e2ff);
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    color: #0b5394;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 25px;
+  }
+  
+  .header .btn {
+    margin-top: 10px;
+  }
+  
+  .top-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .top-links a {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background 0.3s;
+  }
+  
+  .top-links a:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Course Section */
+  .course {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+    margin-bottom: 30px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .course:hover {
+    transform: translateY(-5px);
+  }
+  
+  .course h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0a3d62;
+  }
+  
+  .course p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .course strong {
+    color: #333;
+  }
+  
+  .course .btn {
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .course .btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Section Headings */
+  .container h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #007bff;
+    margin: 40px 0 20px;
+    position: relative;
+  }
+  
+  .container h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #007bff;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  /* Buttons */
+  .btn {
+    background-color: #007bff;
+    padding: 10px 16px;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Animations */
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 2rem;
+    }
+  
+    .container h2 {
+      font-size: 1.6rem;
+    }
+  
+    .top-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .btn, .top-links a {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .course {
+      padding: 15px;
+    }
+  
+    .course h2 {
+      font-size: 1.2rem;
+    }
+  
+    .header h1 {
+      font-size: 1.6rem;
+    }
+  
+    .header p {
+      font-size: 1rem;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Utilities */
+  .text-center {
+    text-align: center;
+  }
+  .mt-20 {
+    margin-top: 20px;
+  }
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+  .mb-40 {
+    margin-bottom: 40px;
+  }
+  .shadow-sm {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .shadow-md {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  .shadow-lg {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  /* More UI Enhancements will be added progressively */
+  
